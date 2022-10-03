@@ -1,0 +1,572 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;}
+ul{list-style:none;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;}
+q:before,q:after{content:'';}
+object,embed{vertical-align:top;}
+legend{display:none;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+img,abbr,acronym,fieldset{border:0;}
+
+body{
+	font: 14px/1.9 'Noto Sans JP', Arial, Verdana, 游ゴシック, YuGothic,'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo,sans-serif;
+	font-weight: 300;
+	-webkit-text-size-adjust:100%;
+	overflow-x: hidden;
+	color: #000;
+	background: #fff;
+}
+
+a{
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover, .active{
+  text-decoration: underline;
+}
+
+a:active, a:focus,input:active, input:focus{outline:0;}
+
+
+/* ヘッダー
+------------------------------------------------------------*/
+#header{
+	position: relative;
+    overflow:hidden;
+    width:100%;
+    height:568px;
+}
+
+#header img{
+    position:absolute;
+    left:50%;
+    width:1280px;
+    height:568px;
+    margin-left:-640px;
+}
+
+#slogan{
+	position: absolute;
+  top: 70%;
+	width: 100%;
+	-webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+	color: rgb(70, 70, 70);
+	line-height: 1.2;
+	text-align: center;
+}
+
+#slogan h1{
+	font-size: 40px;
+	margin-bottom: 20px;
+	font-weight:normal;
+}
+
+#slogan h2{
+	font-size: 20px;
+	font-weight:normal;
+}
+
+
+/* フッター
+------------------------------------------------------------*/
+#footer{
+	clear: both;
+	padding: 50px 10px 50px 0;
+	text-align: center;
+	font-size: 12px;
+}
+
+
+/* 共通
+------------------------------------------------------------*/
+h1, h2{
+	font-family: 'Josefin Sans', 'Noto Sans JP',serif;
+}
+
+img{
+	width: 100%;
+	height: auto;
+	transition: 1.0s ;
+}
+
+a img:hover {
+	opacity: 0.7 ;
+}
+
+a:hover {
+	opacity: 0.7 ;
+}
+section{clear:both;}
+
+section h2{
+	font-size: 22px;
+	font-weight:normal;
+	text-align: center;
+}
+
+.inner{
+	width: 94%;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+.col2 li{
+	display: inline-block;
+	width: 100%;
+  margin: 20px 0 20px 0;
+}
+
+.textright {
+	text-align: right;
+	padding-right: 20px;
+}
+
+.gr-70 {
+	color: rgb(70, 70, 70);
+}
+
+/* SEC01 VISION
+------------------------------------------------------------*/
+
+.vision{
+	width: 60%;
+	margin: 0 auto;
+	padding-bottom: 80px;
+}
+
+
+/* SEC02 MESSAGE
+------------------------------------------------------------*/
+.wrap{
+	clear: both;
+	width: 100%;
+	background: #f6f6f6;
+}
+
+.bg{
+	line-height: 0;
+}
+
+.txt h2{
+	padding: 0 0 20px !important;
+}
+
+
+/* SEC03 SERVICE MESSAGE STORY
+------------------------------------------------------------*/
+.col3 li{
+	margin-bottom: 15px;
+}
+
+.col3 img{
+	max-width: 150px;
+	display: block;
+	margin: -5px auto 20px;
+}
+
+/* SEC04 STORY & SUCCESS
+------------------------------------------------------------*/
+#sec04{
+	background-color: #E9F4F4;
+	color: rgb(70, 70, 70);
+}
+
+#sec04-2{
+	color: rgb(70, 70, 70);
+}
+
+#sec04-3{
+	background-color: #F2F4E4;
+	color: rgb(70, 70, 70);
+}
+
+.flex1 {
+	display: flex;
+	line-height: 2;
+	margin: 20px 0;
+	flex-wrap: wrap;
+	display: -webkit-flex;
+	-webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.flex1 p {
+	width: 200px;
+	padding: 20px;
+}
+
+.flex2 {
+	display: flex;
+	line-height: 2;
+	margin: 50px 0;
+	flex-wrap: wrap;
+	display: -webkit-flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.flex2-co {
+	width: 350px;
+	padding: 20px;
+}
+
+/* SEC05 PROFILE
+------------------------------------------------------------*/
+#sec05{
+	padding-top: 50px;
+}
+
+#sec05 dl{
+	line-height: 1.2;
+}
+
+#sec05 dt{
+	clear: left;
+	float: left;
+	display: block;
+	width: 30%;
+	margin-right: 10%;
+	margin-bottom: 20px;
+	text-align: right;
+	line-height: 1.6em;
+}
+
+#sec05 dd{
+	width: 60%;
+	float: left;
+	text-align: left;
+	margin-bottom: 15px;
+	line-height: 1.6em;
+}
+
+#sec05 header{
+	display: none;
+}
+
+/* SEC05 PROFILE
+------------------------------------------------------------*/
+.sec06 {
+	width: 800px;
+	align-items: center;
+	margin: 0 auto;
+	padding-top: 100px;
+	
+}
+
+/* web 
+------------------------------------------------------------*/
+.web-h2 {
+	text-align: left;
+	padding: 0.25em 0.5em;/*上下 左右の余白*/
+  color: #494949;/*文字色*/
+  background: transparent;/*背景透明に*/
+  border-left: solid 5px #8DCACE;/*左線*/
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.web-h2 span {
+	font-size: small;
+}
+
+.web-mi {
+	font-weight: bold;
+	padding: 1.5rem 0 0.5rem 0;
+	font-size: large;
+}
+
+.web-co {
+	line-height: 1.5;
+	padding: 0.5rem 0 0.5rem 0;
+}
+
+.lp-url{
+	text-align: right;
+	padding: 1.5rem 0;
+}
+/* lp 
+------------------------------------------------------------*/
+.lp-sec1 {
+	margin: 1.5rem;
+}
+.lp-h2 {
+	text-align: left;
+	padding: 0.25em 0.5em;/*上下 左右の余白*/
+  color: #494949;/*文字色*/
+  background: transparent;/*背景透明に*/
+  border-left: solid 5px #C5CF8D;/*左線*/
+	margin-top: 20px;
+}
+
+.lp-mi {
+	font-weight: bold;
+	padding: 1.5rem 0 0.5rem 0;
+	font-size: large;
+}
+
+.lp-co {
+	line-height: 1.5;
+	padding: 0.5rem 0 0.5rem 0;
+}
+
+.lp-url{
+	text-align: right;
+	padding: 1.5rem 0;
+}
+
+/* RESPONSIVE 設定
+------------------------------------------------------------*/
+
+@media only screen and (min-width: 1200px){
+	.inner{
+		width: 1024px;
+		padding-bottom: 60px;
+	}
+	section h2{
+		padding: 70px 0 20px;
+	}
+	.txt h2{
+		padding: 0 0 20px !important;
+	}
+}
+
+@media only screen and (min-width: 800px){
+	body{
+		font-size:14px;
+	}
+	
+  a#menu{
+		display:none;
+	}	
+
+	.panel{
+		display:block !important;
+	}
+
+	#mainnav{
+		position:fixed;
+		top: 0;
+		width:100%;
+		z-index:500;
+	}
+
+	#mainnav ul{
+		text-align: right;
+		padding-right: 30px;
+	}
+
+	#mainnav li{
+		display: inline-block;
+		padding: 45px 10px 20px;
+		font-size: 14px;
+		font-weight: 300;
+	}
+	
+  #mainnav a{
+		color: #000;
+	}
+	
+	#mainnav.changeNav{
+		background: rgba(255,255,255,.9);
+		border-bottom: 1px solid #d1d1d1;
+	}
+	
+	#mainnav.changeNav li{
+		padding: 20px 10px;
+	}
+
+	
+	/* SEC03 SERVICE MESSAGE STORY
+	-----------------*/
+	.col3{
+		text-align: center;
+	}
+
+	.col3 li{
+		display: inline-block;
+		width: 30%;
+		padding: 0 1.5%;
+		margin-bottom: 0;
+		vertical-align: top;
+		text-align: left;
+	}
+	
+	/* SEC05 PROFILE
+	-----------------*/
+	#sec05{
+		padding-top: 120px;
+	}
+	
+  #footer{
+		padding: 30px 10px 70px 0;
+	}
+}
+
+@media only screen and (min-width: 641px){
+	.col2 li{
+		width: 40%;
+		padding: 0 3%;
+		vertical-align: top;
+	}
+}
+
+@media only screen and (max-width: 799px){
+	#slogan h1{
+		font-size: 31px;
+	}
+
+	#slogan h2{
+		font-size: 16px;
+	}
+
+  a#menu{
+  	display: inline-block;
+  	position: relative;
+  	width: 40px;
+  	height: 40px;
+  	margin: 10px;
+	}
+
+	#menuBtn{
+  	display: block;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	width: 18px;
+  	height: 2px;
+  	margin: -1px 0 0 -7px;
+  	background: #fff;
+  	transition: .2s;
+	}
+
+	#menuBtn:before, #menuBtn:after{
+  	display: block;
+  	content: "";
+  	position: absolute;
+  	top: 50%;
+  	left: 0;
+  	width: 18px;
+  	height: 2px;
+  	background: rgb(70, 70, 70);
+  	transition: .3s;
+	}
+
+	#menuBtn:before{
+  	margin-top: -7px;
+	}
+
+	#menuBtn:after{
+  	margin-top: 5px;
+	}
+
+	a#menu .close{
+  	background: transparent;
+	}
+
+	a#menu .close:before, a#menu .close:after{
+  	margin-top: 0;
+	}
+
+	a#menu .close:before{
+  	transform: rotate(-45deg);
+  	-webkit-transform: rotate(-45deg);
+	}
+
+	a#menu .close:after{
+  	transform: rotate(-135deg);
+  	-webkit-transform: rotate(-135deg);
+	}
+
+	.panel{
+		width: 100%;
+		display: none;
+		overflow: hidden;
+		position: relative;
+		left: 0;
+		top: 0;
+		z-index: 100;
+	}
+
+	#mainnav{
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100%;
+		text-align: right;
+		z-index:500;
+	}
+
+	#mainnav ul{
+		border-bottom: 1px solid #ccc;
+		background: #fff;
+		text-align: left;
+	}
+
+	#mainnav li a{
+		position: relative;
+		display:block;
+		padding:15px 25px;
+		border-bottom: 1px solid #ccc;
+		color: #000;
+		font-weight: 400;
+	}
+
+	#mainnav li a:before{
+		display: block;
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 5px;
+		width: 6px;
+		height: 6px;
+		margin: -4px 0 0 0;
+		border-top: solid 2px #000;
+		border-right: solid 2px #000;
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+	.col3 li{
+		margin: 0 auto;
+		display: block;
+	max-width: 288px;
+	}
+	.sec06 {
+		width: 100%;
+		padding-top: 60px;
+	}
+
+	.flex1 {
+		-webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+	}
+	
+	.flex2 {
+		-webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+	}
+}
+
+@media only screen and (max-width: 1199px){
+	section h2{
+		padding: 50px 0 20px 0;
+	}
+	#sec01 h2{
+		padding: 70px 0 20px;
+	}
+	.vMid{
+		padding: 0 20px;
+	}
+}
