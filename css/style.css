@@ -19,12 +19,13 @@ body{
 	font-weight: 300;
 	-webkit-text-size-adjust:100%;
 	overflow-x: hidden;
-	color: #000;
+	color: #595757;
 	background: #fff;
 }
 
+
 a{
-	color: #000;
+	color: #595757;
 	text-decoration: none;
 }
 
@@ -33,6 +34,10 @@ a:hover, .active{
 }
 
 a:active, a:focus,input:active, input:focus{outline:0;}
+
+span {
+	display: inline-block;
+}
 
 
 /* ヘッダー
@@ -119,14 +124,14 @@ section h2{
 }
 
 .col2 li{
-	display: inline-block;
+	/* display: inline-block; */
 	width: 100%;
   margin: 20px 0 20px 0;
 }
 
 .textright {
 	text-align: right;
-	padding-right: 20px;
+	padding-right: 2rem;
 }
 
 .gr-70 {
@@ -169,7 +174,7 @@ section h2{
 .col3 img{
 	max-width: 150px;
 	display: block;
-	margin: -5px auto 20px;
+	margin: -5px auto 5px;
 }
 
 /* SEC04 STORY & SUCCESS
@@ -208,7 +213,7 @@ section h2{
 .flex2 {
 	display: flex;
 	line-height: 2;
-	margin: 50px 0;
+	margin: 30px 0;
 	flex-wrap: wrap;
 	display: -webkit-flex;
   -webkit-justify-content: space-between;
@@ -255,7 +260,7 @@ section h2{
 /* SEC05 PROFILE
 ------------------------------------------------------------*/
 .sec06 {
-	width: 800px;
+	width: 690px;
 	align-items: center;
 	margin: 0 auto;
 	padding-top: 100px;
@@ -292,6 +297,7 @@ section h2{
 .lp-url{
 	text-align: right;
 	padding: 1.5rem 0;
+	font-weight: bold;
 }
 /* lp 
 ------------------------------------------------------------*/
@@ -304,7 +310,9 @@ section h2{
   color: #494949;/*文字色*/
   background: transparent;/*背景透明に*/
   border-left: solid 5px #C5CF8D;/*左線*/
-	margin-top: 20px;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	margin-left: 1rem;
 }
 
 .lp-mi {
@@ -323,13 +331,99 @@ section h2{
 	padding: 1.5rem 0;
 }
 
+/* ボタン設定 */
+.btn-square {
+  display: block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #67C4CD;/*ボタン色*/
+  color: #FFF;
+	font-weight: bold;
+  border-bottom: solid 4px #3D9497;
+  border-radius: 3px;
+	width: 30%;
+	text-align: center;
+	margin: 0 auto;
+}
+.btn-square:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+.colorlp {
+	background: #D3D3D3;/*ボタン色*/
+	border-bottom: solid 4px #A5A5A5;
+}
+
+.colorill {
+	background: #B0B063;/*ボタン色*/
+	border-bottom: solid 4px #8C8A3F;
+}
+
+.profile_text {
+	font-weight: bold;
+	padding-left: 2rem;
+}
+
+/* TOPに戻るボタン */
+#page_top{
+  width: 90px;
+  height: 90px;
+  position: fixed;
+  right: 10px;
+  bottom: 0;
+  opacity: 0;
+  transition: all 1s ease;
+}
+#page_top.show {
+    opacity: 0.6;
+    transform: none;
+ }
+#page_top a{
+  position: relative;
+  display: block;
+  width: 90px;
+  height: 90px;
+  text-decoration: none;
+}
+#page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f102';
+  font-size: 30px;
+  color: #A12568;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -40px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+#page_top a::after{
+  content: 'TOP';
+  font-size: 18px;
+  position: absolute;
+  top: 45px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  color: #A12568;
+}
+
 /* RESPONSIVE 設定
 ------------------------------------------------------------*/
 
 @media only screen and (min-width: 1200px){
 	.inner{
 		width: 1024px;
-		padding-bottom: 60px;
+		padding-bottom: 70px;
 	}
 	section h2{
 		padding: 70px 0 20px;
